@@ -15,5 +15,8 @@ Here's the source code for each chapter:
 ### Tests
 
 ```
-go test -cover -v ./grokking_algorithms/...
+$ go test -cover ./grokking_algorithms/...
+ok  	github.com/pires/go-dojo-algorithms/grokking_algorithms/ch01	0.014s	coverage: 95.8% of statements
+ok  	github.com/pires/go-dojo-algorithms/grokking_algorithms/ch02	0.009s	coverage: 100.0% of statements
+ok  	github.com/pires/go-dojo-algorithms/grokking_algorithms/util	0.012s	coverage: 80.0% of statements
 ```
