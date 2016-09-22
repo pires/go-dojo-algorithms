@@ -8,6 +8,9 @@ This book is an amazing resource for a newbie like me.
 Here's the source code for each chapter:
 
 * [Chapter 1](./grokking_algorithms/ch01)
+  * Binary Search
+* [Chapter 2](./grokking_algorithms/ch02)
+  * Selection Sort
 
 ### Tests
 
