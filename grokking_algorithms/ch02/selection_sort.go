@@ -1,4 +1,4 @@
-package selection_sort
+package algos
 
 import (
 	"github.com/pires/go-dojo-algorithms/grokking_algorithms/util"

@@ -1,4 +1,4 @@
-package binary_search_test
+package algos_test
 
 import (
 	"testing"
@@ -40,7 +40,7 @@ func TestBinarySearchInt(t *testing.T) {
 	}
 
 	for _, tt := range computations {
-		ok, pos := binary_search.BinarySearchInt(tt.items, tt.item)
+		ok, pos := algos.BinarySearchInt(tt.items, tt.item)
 		if ok != tt.result.ok || pos != tt.result.pos {
 			t.Fatalf("TestBinarySearchInt: expected: %+v, found: %+v", tt.result, result{ok, pos})
 		}
@@ -76,7 +76,7 @@ func TestBinarySearchString(t *testing.T) {
 	}
 
 	for _, tt := range computations {
-		ok, pos := binary_search.BinarySearchString(tt.items, tt.item)
+		ok, pos := algos.BinarySearchString(tt.items, tt.item)
 		if ok != tt.result.ok || pos != tt.result.pos {
 			t.Fatalf("TestBinarySearchString: expected: %+v, found: %+v", tt.result, result{ok, pos})
 		}

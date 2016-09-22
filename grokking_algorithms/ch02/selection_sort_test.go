@@ -1,4 +1,4 @@
-package selection_sort_test
+package algos_test
 
 import (
 	"testing"
@@ -47,7 +47,7 @@ func TestSortInts(t *testing.T) {
 	}
 
 	for _, tt := range computations {
-		itemsAsc, itemsDesc := selection_sort.SortInts(tt.items)
+		itemsAsc, itemsDesc := algos.SortInts(tt.items)
 		for pos, v := range itemsAsc {
 			if v != tt.result.itemsAsc[pos] {
 				t.Fatalf("TestSortInts: expected: %+v, found: %+v", tt.result.itemsAsc, itemsAsc)
@@ -102,7 +102,7 @@ func TestSortStrings(t *testing.T) {
 	}
 
 	for _, tt := range computations {
-		itemsAsc, itemsDesc := selection_sort.SortStrings(tt.items)
+		itemsAsc, itemsDesc := algos.SortStrings(tt.items)
 		for pos, v := range itemsAsc {
 			if v != tt.result.itemsAsc[pos] {
 				t.Fatalf("TestSortStrings: expected: %+v, found: %+v", tt.result.itemsAsc, itemsAsc)
