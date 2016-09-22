@@ -2,20 +2,9 @@ package binary_search
 
 import (
 	"sort"
-)
 
-// Higher whether v1 is higher than v2.
-// While equality works for interface{}, greater than or lower than, doesnt.
-func GreaterThan(v1 interface{}, v2 interface{}) bool {
-	switch v1.(type) {
-	case int:
-		return v1.(int) > v2.(int)
-	case string:
-		return v1.(string) > v2.(string)
-	default:
-		return v1.(int) > v2.(int)
-	}
-}
+	"github.com/pires/go-dojo-algorithms/grokking_algorithms/util"
+)
 
 // binarySearch takes an array of items, sorts it and performs binary search on it,
 // It returns true plus the position in the list, if the item exists in the list,
@@ -44,7 +33,7 @@ func binarySearch(items []interface{}, item interface{}) (bool, int) {
 		}
 
 		// Cut elements to search in (the correct) half
-		if GreaterThan(items[mid], item) {
+		if util.GreaterThan(items[mid], item) {
 			high = mid - 1
 		} else {
 			low = mid + 1
