@@ -48,7 +48,7 @@ func BinarySearchInt(items []int, item int) (bool, int) {
 	// Make sure items are sorted
 	sort.Ints(items)
 
-	var interfaceSlice []interface{} = make([]interface{}, len(items))
+	interfaceSlice := make([]interface{}, len(items))
 	for i, d := range items {
 		interfaceSlice[i] = d
 	}
@@ -62,7 +62,7 @@ func BinarySearchString(items []string, item string) (bool, int) {
 	// Make sure items are sorted
 	sort.Strings(items)
 
-	var interfaceSlice []interface{} = make([]interface{}, len(items))
+	interfaceSlice := make([]interface{}, len(items))
 	for i, d := range items {
 		interfaceSlice[i] = d
 	}

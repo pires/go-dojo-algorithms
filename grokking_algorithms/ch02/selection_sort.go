@@ -5,7 +5,9 @@ import (
 )
 
 const (
-	ASC  = 0
+	// ASC is ascending order
+	ASC = 0
+	// DESC is descending order
 	DESC = 1
 )
 
@@ -58,7 +60,7 @@ func sort(items []interface{}, order int) []interface{} {
 // SortInts performs selection sort on an array of integers.
 // The result is two arrays sorted in ascending and descending order, respectively.
 func SortInts(items []int) (asc []int, desc []int) {
-	var interfaceSlice []interface{} = make([]interface{}, len(items))
+	interfaceSlice := make([]interface{}, len(items))
 	for i, d := range items {
 		interfaceSlice[i] = d
 	}
@@ -81,7 +83,7 @@ func SortInts(items []int) (asc []int, desc []int) {
 // SortStrings performs selection sort on an array of strings.
 // The result is two arrays sorted in ascending and descending order, respectively.
 func SortStrings(items []string) (asc []string, desc []string) {
-	var interfaceSlice []interface{} = make([]interface{}, len(items))
+	interfaceSlice := make([]interface{}, len(items))
 	for i, d := range items {
 		interfaceSlice[i] = d
 	}
